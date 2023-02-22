@@ -1,15 +1,12 @@
 import ml_ripeness.calculate_ripeness as cr
 
+from fsm import *
 
-from keras.models import load_model
-
-
-
-ripeness_model = load_model('ripeness_model.h5')
 
 
 
 def main():
-    cr.process_and_predict('test.png', ripeness_model)
+    #Initialie the system with all config variables and such
+    fsm()
 
 main()
